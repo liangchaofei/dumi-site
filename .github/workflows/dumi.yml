@@ -27,10 +27,10 @@ jobs:
           node-version: '18'
       # 编译
       - name: Build
-        # docs:build 对应文档的打包脚本
+        # build 对应文档的打包脚本
         run: |
-          yarn install
-          yarn docs:build
+          pnpm install
+          pnpm build
       # 部署到 github pages
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
