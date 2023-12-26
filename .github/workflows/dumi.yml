@@ -24,7 +24,7 @@ jobs:
       - name: Setup Node
         uses: actions/setup-node@v3
         with:
-          node-version: '14'
+          node-version: '18'
       # 编译
       - name: Build
         # docs:build 对应文档的打包脚本
